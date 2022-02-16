@@ -108,8 +108,8 @@ est <- ggplot(logit$est) +
   annotate(
     "text",
     x = 1.02,
-    y = 2.5,
-    label = "No difference from standard",
+    y = 3,
+    label = "Odds when playing only standard",
     angle = 90,
     size = 5.5,
     col = scheme$sumi
