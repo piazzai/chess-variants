@@ -8,7 +8,7 @@ library(perturb)
 
 global <-
   list(
-    path = "/media/piazzai/Data/lichess",
+    path = "/path/to/data",
     dump = "2022-01",
     start = ISOdate(2022, 1, 3, 0, 0, 0) %>% as.numeric(),
     end = ISOdate(2022, 1, 31, 0, 0, 0) %>% as.numeric(),
