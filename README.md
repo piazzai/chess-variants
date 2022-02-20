@@ -14,7 +14,7 @@ To replicate the analysis, download the January 2022 data dumps from the [Liches
 -   <https://database.lichess.org/racingKings/lichess_db_racingKings_rated_2022-01.pgn.bz2>
 -   <https://database.lichess.org/threeCheck/lichess_db_threeCheck_rated_2022-01.pgn.bz2>
 
-Place `pgn2bash.sh` in the same folder as the data dumps, Run this script in shell to unzip the dumps and convert the PGN into much lighter CSV files. Provide the path to the CSV files in `global.R`.
+Place `pgn2csv.sh` in the same folder as the data dumps, Run this script in shell to unzip the dumps and convert the PGN into much lighter CSV files. Provide the path to the CSV files in `global.R`.
 
 Afterward, run the R scripts in this order: `pgn.R`, `games.R`, `logit.R`, `plots.R`. Each script reads the output of the previous (if any) and saves its own output to disk. Be aware that some of the scripts deal with very large files and take several hours to run, even with parallelization.
 
