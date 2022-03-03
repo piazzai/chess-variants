@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 pgn=${1%.bz2}
 csv=${1%.pgn.bz2}.csv
 
